@@ -1,1 +1,1 @@
-# E Grade Dance Studio 
+# E Grade Dance Studio App
