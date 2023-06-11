@@ -81,6 +81,8 @@ export class AppComponent {
   footerLogoSrc: string = '../assets/images/footer_logo.png';
   contactNumber = '+91 - 8190091061';
   emailAddress = 'egradedancecrew@gmail.com';
+  eGradeLogoSrc: string = '../assets/images/e_grade_logo.svg';
+  hamburgerIconSrc: string = '../assets/images/hamburger_icon.svg';
 
   toggleService(serviceType: boolean) {
     this.isClasses = serviceType;
