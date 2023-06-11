@@ -72,8 +72,15 @@ export class AppComponent {
       description: 'Show Choreography',
     },
   ];
+  listOfSocialMedia = [
+    '../assets/images/social_1.png',
+    '../assets/images/social_2.png',
+    '../assets/images/social_3.png',
+  ];
 
   footerLogoSrc: string = '../assets/images/footer_logo.png';
+  contactNumber = '+91 - 8190091061';
+  emailAddress = 'egradedancecrew@gmail.com';
 
   toggleService(serviceType: boolean) {
     this.isClasses = serviceType;

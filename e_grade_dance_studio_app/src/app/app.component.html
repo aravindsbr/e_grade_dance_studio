@@ -80,6 +80,44 @@
       <div class="footer-logo">
         <img src="{{ footerLogoSrc }}" />
       </div>
+      <div class="explore-layout">
+        <p class="footer-title">Explore</p>
+        <p class="footer-sub-title">Home</p>
+        <p class="footer-sub-title">Works</p>
+        <p class="footer-sub-title">About Us</p>
+      </div>
+      <div class="meet-us-layout">
+        <p class="footer-title">Meet Us</p>
+        <p class="footer-sub-title">
+          E - Grade Dance Studio, <br />
+          No. 282, 2nd Floor, <br />
+          S.S. Complex, G.S.T Road, <br />
+          Opposite to Parvathy hospital,<br />
+          Chrompet, Chennai - 600 044
+        </p>
+      </div>
+      <div class="call-us-layout">
+        <p class="footer-title">Call Us</p>
+        <p class="footer-sub-title">{{ contactNumber }}</p>
+      </div>
+      <div class="mail-us-layout">
+        <p class="footer-title">Mail Us</p>
+        <p class="footer-sub-title">{{ emailAddress }}</p>
+      </div>
+      <div class="social-media-layout-parent">
+        <p class="footer-title">Social</p>
+        <div class="social-media-layout">
+          <div *ngFor="let item of listOfSocialMedia">
+            <div class="social-media-item">
+              <img src="{{ item }}" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights-layout">
+        <hr class="copyright-line" />
+        <div class="copyright-text">Copyrights Reserved</div>
+      </div>
     </div>
   </div>
 </div>
