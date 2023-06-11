@@ -26,6 +26,21 @@ export class AppComponent {
     '../assets/images/event_6.png',
     '../assets/images/event_7.png',
   ];
+  listOfTestimonials = [
+    '../assets/images/testimonial_1.png',
+    '../assets/images/testimonial_2.png',
+    '../assets/images/testimonial_3.png',
+    '../assets/images/testimonial_4.png',
+    '../assets/images/testimonial_5.png',
+    '../assets/images/testimonial_6.png',
+    '../assets/images/testimonial_7.png',
+    '../assets/images/testimonial_8.png',
+    '../assets/images/testimonial_9.png',
+    '../assets/images/testimonial_10.png',
+    '../assets/images/testimonial_11.png',
+    '../assets/images/testimonial_12.png',
+  ];
+
   toggleService(serviceType: boolean) {
     this.isClasses = serviceType;
   }

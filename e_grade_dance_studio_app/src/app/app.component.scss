@@ -51,12 +51,14 @@
 }
 
 .class-item,
-.event-item {
+.event-item,
+.testiomonial-item {
   margin-bottom: 20px;
 }
 
 .classes-layout,
-.events-layout {
+.events-layout,
+.testimonials-layout {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

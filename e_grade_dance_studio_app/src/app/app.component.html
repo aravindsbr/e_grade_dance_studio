@@ -43,5 +43,12 @@
       <span class="header-text">Testimonials</span>
       <span class="header-period">.</span>
     </div>
+    <div class="testimonials-layout">
+      <div *ngFor="let item of listOfTestimonials">
+        <div class="testiomonial-item">
+          <img src="{{ item }}" class="img-fluid" />
+        </div>
+      </div>
+    </div>
   </div>
 </div>
