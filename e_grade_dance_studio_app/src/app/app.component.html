@@ -51,4 +51,28 @@
       </div>
     </div>
   </div>
+  <div class="fourth-container">
+    <div class="header-content">
+      <span class="header-text">Brands</span>
+      <span class="header-period">.</span>
+    </div>
+    <div class="services-content">
+      <div class="services-text">
+        Collaborations with leading brands, both in and out of the film
+        business, have assisted us in growing and reaching a broader audience.
+      </div>
+    </div>
+    <div class="brands-layout">
+      <div *ngFor="let item of listOfBrands">
+        <div class="brand-item">
+          <div>
+            <img src="{{ item.src }}" />
+          </div>
+
+          <div class="brand-name">{{ item.name }}</div>
+          <div class="brand-description">{{ item.description }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

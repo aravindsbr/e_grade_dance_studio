@@ -40,6 +40,38 @@ export class AppComponent {
     '../assets/images/testimonial_11.png',
     '../assets/images/testimonial_12.png',
   ];
+  listOfBrands = [
+    {
+      src: '../assets/images/brand_1.png',
+      name: 'Sony Music South',
+      description: 'Song Promotions',
+    },
+    {
+      src: '../assets/images/brand_2.png',
+      name: 'U1 Records',
+      description: 'Song Dance Team',
+    },
+    {
+      src: '../assets/images/brand_3.png',
+      name: 'Think Music',
+      description: 'Song Dance Team',
+    },
+    {
+      src: '../assets/images/brand_4.png',
+      name: 'Star Vijay Television',
+      description: 'Guest Performance',
+    },
+    {
+      src: '../assets/images/brand_5.png',
+      name: 'Sandy’s Dance Studio',
+      description: 'Song Dance Team',
+    },
+    {
+      src: '../assets/images/brand_6.png',
+      name: 'Zee Tamizh Television',
+      description: 'Show Choreography',
+    },
+  ];
 
   toggleService(serviceType: boolean) {
     this.isClasses = serviceType;
