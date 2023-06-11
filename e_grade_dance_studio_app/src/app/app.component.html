@@ -1,1 +1,47 @@
-<div>{{ title }}</div>
+<div class="parent-container">
+  <div class="first-container">
+    <div>{{ title }}</div>
+  </div>
+  <div class="second-container">
+    <div class="header-content">
+      <span class="header-text">Services</span>
+      <span class="header-period">.</span>
+    </div>
+    <div class="services-content">
+      <div class="services-text">
+        Lorem Ipsum is simply dummy text of these are printing and typesetting
+        industry.
+      </div>
+    </div>
+    <div class="services-buttons">
+      <div class="btn-group">
+        <button type="button" class="btn" (click)="toggleService(true)">
+          <span class="button-label">Classes</span>
+        </button>
+        <button type="button" class="btn" (click)="toggleService(false)">
+          <span class="button-label">Events</span>
+        </button>
+      </div>
+    </div>
+    <div class="classes-layout" *ngIf="isClasses">
+      <div *ngFor="let item of listOfClasses">
+        <div class="class-item">
+          <img src="{{ item }}" />
+        </div>
+      </div>
+    </div>
+    <div class="events-layout" *ngIf="!isClasses">
+      <div *ngFor="let item of listOfEvents">
+        <div class="event-item">
+          <img src="{{ item }}" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="third-container">
+    <div class="header-content">
+      <span class="header-text">Testimonials</span>
+      <span class="header-period">.</span>
+    </div>
+  </div>
+</div>
