@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'e_grade_dance_studio_app';
   isClasses: boolean = true;
+  isMenuOpen: boolean = false;
   listOfClasses = [
     '../assets/images/class_1.png',
     '../assets/images/class_2.png',
@@ -83,8 +84,13 @@ export class AppComponent {
   emailAddress = 'egradedancecrew@gmail.com';
   eGradeLogoSrc: string = '../assets/images/e_grade_logo.svg';
   hamburgerIconSrc: string = '../assets/images/hamburger_icon.svg';
+  closeIconSrc: string = '../assets/images/close_icon.svg';
 
   toggleService(serviceType: boolean) {
     this.isClasses = serviceType;
+  }
+
+  openMenu(isMenuOpen: boolean) {
+    this.isMenuOpen = isMenuOpen;
   }
 }

@@ -159,3 +159,33 @@
   display: flex;
   justify-content: space-between;
 }
+
+.menu-options-layout,
+.communcations-layout {
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.menu-option-selected,
+.menu-option-not-selected {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.045em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.communcations-option {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.menu-option-not-selected {
+  color: rgba(255, 255, 255, 0.5);
+}

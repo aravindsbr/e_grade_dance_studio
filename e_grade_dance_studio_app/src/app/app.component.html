@@ -1,12 +1,33 @@
 <div class="parent-container">
   <div class="first-container">
-    <div class="header-bar">
-      <span class="e-grade-logo">
-        <img src="{{ eGradeLogoSrc }}" />
-      </span>
-      <span class="hamburger-icon">
-        <img src="{{ hamburgerIconSrc }}" />
-      </span>
+    <div class="menu-close" *ngIf="!isMenuOpen">
+      <div class="header-bar">
+        <span class="e-grade-logo">
+          <img src="{{ eGradeLogoSrc }}" />
+        </span>
+        <span class="hamburger-icon" (click)="openMenu(true)">
+          <img src="{{ hamburgerIconSrc }}" />
+        </span>
+      </div>
+    </div>
+    <div class="menu-open" *ngIf="isMenuOpen">
+      <div class="header-bar">
+        <span class="e-grade-logo">
+          <img src="{{ eGradeLogoSrc }}" />
+        </span>
+        <span class="close-icon" (click)="openMenu(false)">
+          <img src="{{ closeIconSrc }}" />
+        </span>
+      </div>
+      <div class="menu-options-layout">
+        <div class="menu-option-selected">HOME</div>
+        <div class="menu-option-not-selected">WORKS</div>
+        <div class="menu-option-not-selected">ABOUT US</div>
+      </div>
+      <div class="communcations-layout">
+        <div class="communcations-option">T : {{ contactNumber }}</div>
+        <div class="communcations-option">E: {{ emailAddress }}</div>
+      </div>
     </div>
   </div>
   <div class="second-container">
