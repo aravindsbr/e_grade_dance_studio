@@ -73,6 +73,8 @@ export class AppComponent {
     },
   ];
 
+  footerLogoSrc: string = '../assets/images/footer_logo.png';
+
   toggleService(serviceType: boolean) {
     this.isClasses = serviceType;
   }
