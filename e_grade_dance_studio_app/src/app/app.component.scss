@@ -189,3 +189,16 @@
 .menu-option-not-selected {
   color: rgba(255, 255, 255, 0.5);
 }
+
+.footer-bar {
+  position: absolute;
+  margin-left: 30px;
+  margin-bottom: 32px;
+  bottom: 0;
+}
+
+.call-icon {
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+}

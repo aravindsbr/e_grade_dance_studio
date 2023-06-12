@@ -85,6 +85,7 @@ export class AppComponent {
   eGradeLogoSrc: string = '../assets/images/e_grade_logo.svg';
   hamburgerIconSrc: string = '../assets/images/hamburger_icon.svg';
   closeIconSrc: string = '../assets/images/close_icon.svg';
+  callIconSrc: string = '../assets/images/call_icon.png';
 
   toggleService(serviceType: boolean) {
     this.isClasses = serviceType;
