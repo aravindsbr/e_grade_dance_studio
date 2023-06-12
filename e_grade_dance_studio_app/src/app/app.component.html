@@ -10,10 +10,32 @@
         </span>
       </div>
       <div class="footer-bar"></div>
-      <span class="call-icon">
+      <span
+        class="call-icon"
+        (click)="openCallModal(true)"
+        *ngIf="!isModalOpen"
+      >
         <!-- to be modified -->
         <img src="{{ eGradeLogoSrc }}" />
       </span>
+      <div class="call-modal" *ngIf="isModalOpen">
+        <div class="call-modal-layout">
+          <span *ngFor="let item of listOfCallModalOptions">
+            <span class="call-modal-item">
+              <span class="call-modal-icon">
+                <img src="{{ item.src }}" />
+              </span>
+              <span class="call-modal-name">{{ item.name }}</span>
+            </span>
+          </span>
+          <span>
+            <span class="call-icon" (click)="openCallModal(false)">
+              <!-- to be modified -->
+              <img src="{{ closeIconForModalSrc }}" />
+            </span>
+          </span>
+        </div>
+      </div>
     </div>
     <div class="menu-open" *ngIf="isMenuOpen">
       <div class="header-bar">

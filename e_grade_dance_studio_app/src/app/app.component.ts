@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'e_grade_dance_studio_app';
   isClasses: boolean = true;
   isMenuOpen: boolean = false;
+  isModalOpen: boolean = false;
   listOfClasses = [
     '../assets/images/class_1.png',
     '../assets/images/class_2.png',
@@ -78,6 +79,24 @@ export class AppComponent {
     '../assets/images/social_2.png',
     '../assets/images/social_3.png',
   ];
+  listOfCallModalOptions = [
+    {
+      src: '../assets/images/phone_icon.svg',
+      name: 'Phone / SMS',
+    },
+    {
+      src: '../assets/images/whatsapp_icon.svg',
+      name: 'Whatsapp',
+    },
+    {
+      src: '../assets/images/instagram_icon.svg',
+      name: 'Instagram',
+    },
+    {
+      src: '../assets/images/location_icon.svg',
+      name: 'Get Location',
+    },
+  ];
 
   footerLogoSrc: string = '../assets/images/footer_logo.png';
   contactNumber = '+91 - 8190091061';
@@ -86,6 +105,7 @@ export class AppComponent {
   hamburgerIconSrc: string = '../assets/images/hamburger_icon.svg';
   closeIconSrc: string = '../assets/images/close_icon.svg';
   callIconSrc: string = '../assets/images/call_icon.png';
+  closeIconForModalSrc: string = '../assets/images/close_icon_modal.svg';
 
   toggleService(serviceType: boolean) {
     this.isClasses = serviceType;
@@ -93,5 +113,9 @@ export class AppComponent {
 
   openMenu(isMenuOpen: boolean) {
     this.isMenuOpen = isMenuOpen;
+  }
+
+  openCallModal(isModalOpen: boolean) {
+    this.isModalOpen = isModalOpen;
   }
 }
